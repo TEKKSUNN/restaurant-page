@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "TEKKSUNN <48319429+TEKKSUNN@users.noreply.github.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  }
 }
