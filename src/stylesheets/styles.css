@@ -97,3 +97,7 @@ a:hover {
     color: var(--main-color);
     text-decoration: underline;
 }
+
+#content {
+    padding: 0 25vw;
+}
