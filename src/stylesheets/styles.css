@@ -58,6 +58,8 @@ header {
     justify-content: center;
     gap: 25vw;
     box-shadow: var(--mild-shadow);
+    position: sticky;
+    top: 0px;
 }
 
 #tabs {
