@@ -99,5 +99,46 @@ a:hover {
 }
 
 #content {
-    padding: 0 25vw;
+    padding: 10px 25vw;
+}
+
+.content-img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#home-img {
+    height: 75vh;
+    width: 25vw;
+}
+
+#content.home {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    grid-template-areas: "message home-img";
+    gap: 16px;
+}
+
+.msg {
+    grid-area: message;
+}
+
+.heading {
+    font-family: 'robotobold', sans-serif;
+    font-size: 4ex;
+    margin: 0;
+    padding: 0;
+    text-shadow: var(--mild-shadow);
+}
+
+.paragraph {
+    font-size: 2ex;
+}
+
+#home-img {
+    grid-area: home-img;
+}
+
+.content-img {
+    box-shadow: var(--mild-shadow);
 }
