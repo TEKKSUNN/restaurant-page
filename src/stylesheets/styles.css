@@ -142,3 +142,7 @@ a:hover {
 .content-img {
     box-shadow: var(--mild-shadow);
 }
+
+#content.about .paragraph {
+    font-size: 1.5ex;
+}
