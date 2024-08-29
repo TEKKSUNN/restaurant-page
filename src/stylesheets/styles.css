@@ -1,4 +1,5 @@
 @import url("../fonts/Roboto-Font/stylesheet.css");
+@import url("../fonts/alex-brush/stylesheet.css");
 
 * {
     font-family: 'robotoregular', sans-serif;
@@ -8,5 +9,75 @@ body {
     height: 100vh;
     width: auto;
     background-image: url("../images/background.png");
-    background-repeat: round no-repeat;
+    background-repeat: round repeat;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #CD5C08;
+    --secondary-color: #FFF5E4;
+    --tertiary-color: #C1D8C3;
+    --quaternary-color: #6A9C89;
+    --shadow: rgba(0, 0, 0, 0.25);
+    --mild-shadow: 5px 5px 10px var(--shadow);
+    --bottom-white-shadow: 0 10px 10px rgba(255, 255, 255, 0.75);
+}
+
+#restaurant-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+}
+
+#restaurant-logo {
+    height: 50px;
+    width: 50px;
+}
+
+#restaurant-title {
+    font-family: 'alex_brushregular', sans-serif;
+    color: var(--secondary-color);
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+#restaurant-title a:hover {
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    gap: 25vw;
+    box-shadow: var(--mild-shadow);
+}
+
+#tabs {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4px;
+}
+
+.tab {
+    font-family: 'robotobold', sans-serif;
+    border: var(--shadow);
+    background-color: var(--tertiary-color);
+    color: var(--quaternary-color);
+}
+
+.tab:not(.active-tab):hover {
+    background-color: var(--quaternary-color);
+    color: var(--tertiary-color);
+}
+
+.active-tab {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    box-shadow: var(--bottom-white-shadow);
 }
