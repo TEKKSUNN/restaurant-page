@@ -12,6 +12,8 @@ body {
     background-repeat: round repeat;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template: max-content 1fr min-content / 1fr;
 }
 
 :root {
@@ -80,4 +82,18 @@ header {
     background-color: var(--secondary-color);
     color: var(--main-color);
     box-shadow: var(--bottom-white-shadow);
+}
+
+footer {
+    color: var(--quaternary-color);
+    font-size: 15px;
+}
+
+footer a {
+    color: var(--quaternary-color);
+}
+
+a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
 }
