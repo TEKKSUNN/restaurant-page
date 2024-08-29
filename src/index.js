@@ -4,6 +4,8 @@ import RestaurantLogo from "./images/restaurant.png";
 
 import template from "./template.html";
 
+import changeToHomeTab from "./scripts/home.js";
+
 const createLinkTag = function(url) {
     const linkTag = document.createElement("a");
     linkTag.href = url;
@@ -28,4 +30,5 @@ document.addEventListener("DOMContentLoaded", () => {
         RestaurantInfo.appendChild(linkImage);
         RestaurantInfo.appendChild(linkTitle);
     })();
+    changeToHomeTab();
 });
