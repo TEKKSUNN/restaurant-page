@@ -1,3 +1,9 @@
+@import url("../fonts/Roboto-Font/stylesheet.css");
+
+* {
+    font-family: 'robotoregular', sans-serif;
+}
+
 body {
     height: 100vh;
     width: auto;
