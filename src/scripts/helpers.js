@@ -55,3 +55,10 @@ export const activateTab = function(tabId) {
         }
     });
 }
+
+export const createLinkTag = function(url) {
+    const linkTag = document.createElement("a");
+    linkTag.href = url;
+    linkTag.rel = "noopener noreferrer";
+    return linkTag;
+}

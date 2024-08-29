@@ -4,14 +4,8 @@ import RestaurantLogo from "./images/restaurant.png";
 
 import template from "./template.html";
 
+import { createLinkTag } from "./scripts/helpers.js";
 import changeToHomeTab from "./scripts/home.js";
-
-const createLinkTag = function(url) {
-    const linkTag = document.createElement("a");
-    linkTag.href = url;
-    linkTag.rel = "noopener noreferrer";
-    return linkTag;
-}
 
 document.addEventListener("DOMContentLoaded", () => {
     const RestaurantInfo = document.getElementById("restaurant-info");
