@@ -6,6 +6,8 @@ import template from "./template.html";
 
 import { createLinkTag } from "./scripts/helpers.js";
 import changeToHomeTab from "./scripts/home.js";
+import changeToMenuTab from "./scripts/menu.js";
+import changeToAboutTab from "./scripts/about.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const RestaurantInfo = document.getElementById("restaurant-info");
@@ -25,4 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
         RestaurantInfo.appendChild(linkTitle);
     })();
     changeToHomeTab();
+
+    document.getElementById("home-btn").addEventListener("click", changeToHomeTab);
+    document.getElementById("menu-btn").addEventListener("click", changeToMenuTab);
+    document.getElementById("about-btn").addEventListener("click", changeToAboutTab);
 });
