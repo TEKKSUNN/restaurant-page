@@ -8,6 +8,7 @@ import { createLinkTag } from "./scripts/helpers.js";
 import changeToHomeTab from "./scripts/home.js";
 import changeToMenuTab from "./scripts/menu.js";
 import changeToAboutTab from "./scripts/about.js";
+import changeToContactTab from "./scripts/contact.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const RestaurantInfo = document.getElementById("restaurant-info");
@@ -31,4 +32,5 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("home-btn").addEventListener("click", changeToHomeTab);
     document.getElementById("menu-btn").addEventListener("click", changeToMenuTab);
     document.getElementById("about-btn").addEventListener("click", changeToAboutTab);
+    document.getElementById("contact-btn").addEventListener("click", changeToContactTab);
 });
