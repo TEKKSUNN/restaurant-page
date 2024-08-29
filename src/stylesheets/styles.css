@@ -24,6 +24,7 @@ body {
     --shadow: rgba(0, 0, 0, 0.25);
     --mild-shadow: 5px 5px 10px var(--shadow);
     --bottom-white-shadow: 0 10px 10px rgba(255, 255, 255, 0.75);
+    --strong-shadow: rgba(0, 0, 0, 0.75);
 }
 
 #restaurant-info {
@@ -145,4 +146,35 @@ a:hover {
 
 #content.about .paragraph {
     font-size: 1.5ex;
+}
+
+.menu .content-img {
+    height: 100px;
+    width: 100px;
+}
+
+.menu .items .heading {
+    font-size: 2ex;
+}
+
+.menu .items .paragraph {
+    font-size: 1.5ex;
+}
+
+.menu .items {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.menu .item {
+    background-color: var(--strong-shadow);
+    box-shadow: var(--mild-shadow);
+    color: var(--secondary-color);
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
